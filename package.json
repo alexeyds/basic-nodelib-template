@@ -33,7 +33,7 @@
     "eslint": "^6.6.0",
     "rollup": "^1.25.2",
     "rollup-plugin-babel": "^4.3.3",
-    "tap-spec-dot": "^0.1.1",
+    "tap-spec-dot": "^0.1.2",
     "tape": "^4.11.0"
   }
 }
