@@ -11,8 +11,8 @@
   "scripts": {
     "test": "./test.sh test",
     "lint": "eslint {src,test}/**/*{js,jsx}",
-    "test-dist": "",
-    "prepublishOnly": "npm test && npm run-script build && npm run-script test-dist",
+    "test-dist": "echo",
+    "prepublishOnly": "yarn test && yarn build && yarn test-dist",
     "build": "rollup -c && ./test.sh test/dist"
   },
   "repository": {
