@@ -9,11 +9,11 @@
     "lib"
   ],
   "scripts": {
-    "test": "./test.sh test",
+    "test": "./bin/test.sh test/lib",
     "lint": "eslint {src,test}/**/*{js,jsx}",
     "test-dist": "echo",
     "prepublishOnly": "yarn test && yarn build && yarn test-dist",
-    "build": "rollup -c && ./test.sh test/dist"
+    "build": "rollup -c"
   },
   "repository": {
     "type": "git",
@@ -29,13 +29,12 @@
   "devDependencies": {
     "@babel/core": "^7.14.6",
     "@babel/preset-env": "^7.14.7",
+    "@babel/register": "^7.14.5",
+    "@rollup/plugin-node-resolve": "^13.0.0",
     "babel-plugin-module-resolver": "^4.1.0",
-    "enhanced-tape": "^0.2.2",
-    "enhanced-tape-runner": "^1.1.4",
     "eslint": "^7.29.0",
+    "jutest": "^0.0.2",
     "rollup": "^2.52.2",
-    "rollup-plugin-babel": "^4.4.0",
-    "tap-spec-dot": "^0.1.4",
-    "tape": "^5.2.2"
+    "rollup-plugin-babel": "^4.4.0"
   }
 }

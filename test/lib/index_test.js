@@ -1,13 +1,9 @@
-import test from "enhanced-tape";
+import test from "jutest";
 
-test("My library lib test", function(t) {
-  t.test("thing", function(t) {
-    t.test("does something", function(t) {
-      t.true(true);
-
-      t.end();
+test("My library lib test", s => {
+  s.describe("thing", s => {
+    s.test("does something", t => {
+      t.assert(true);
     });
   });
-
-  t.end();
 });
